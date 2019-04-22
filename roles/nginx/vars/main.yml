@@ -1,0 +1,4 @@
+---
+nginx_web_root: /data/www
+index_path: /root/ansible/roles/nginx/files/www
+www: /data/www   

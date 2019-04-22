@@ -1,0 +1,13 @@
+---
+
+- hosts: test2
+  remote_user: root
+  become: yes
+  
+  roles:
+    - role: nginx
+  
+  tasks:
+    - name: debug
+      debug:
+        msg: "is:{{www}}"

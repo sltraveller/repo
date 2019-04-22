@@ -1,0 +1,16 @@
+- name: install epel
+  yum:
+    name=epel-release
+    state=present
+
+- name: install pck
+  yum: 
+    name=nginx
+    state=installed
+  notify:
+    name: start service
+
+- name: mkdir data
+  file:
+    path={{ www }}
+    state=directory

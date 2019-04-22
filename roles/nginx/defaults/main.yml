@@ -1,0 +1,4 @@
+---
+nginx_server_name: localhost
+nginx_conf: /etc/nginx/nginx.conf
+default_conf: /etc/nginx/conf.d/default.conf
