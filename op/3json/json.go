@@ -1,10 +1,11 @@
 package main
 
 import (
+    "log"
     "encoding/json"
     "fmt"
-    "log"
 )
+
 
 type User struct {
     Name string
